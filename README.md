@@ -1,6 +1,4 @@
-Here’s the README in Markdown format:
 
-```markdown
 # Currency Converter
 
 ## Live Demo
