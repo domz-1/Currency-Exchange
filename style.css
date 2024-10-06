@@ -1,0 +1,126 @@
+:root {
+    --bgc : rgb(62, 61, 61);
+    --light-orange: #E6D9A2;
+    --pinkish-purple: #CB80AB;
+    --purple-blue: #8967B3;
+    --dark-purple: #624E88;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+}
+
+div.date p#date {
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+.container{
+    background-color:var(--bgc);
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main div.container div.input input {
+outline: none;
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+position: relative;
+border: var(--purple-blue) 5px solid;
+background-color: transparent;
+color: white;
+}
+label{
+    font-size: 1.2em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    z-index: 2;
+    color:white;
+    transition: .3s;
+}
+
+
+
+.input input:focus ~ label ,
+.input input:valid ~ label {
+    top: 8px;
+    font-size: 0.9em;
+    color: white;
+    background-color:var(--bgc) ;
+    left: 5px;
+    padding: 0 5px;
+    z-index: 2;
+}
+main div.container div.select-curs{
+    display: flex;
+    flex-direction: row;
+}
+main div.container div.select-curs select {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--pinkish-purple);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+main div.container div.output h3 {
+    margin: 0;
+    color: white;
+    text-align: center;}
+main div.container div.output h4 {
+    color:white;
+    margin: 0;
+    text-align: center;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.output button{
+    background-color: var(--purple-blue);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
